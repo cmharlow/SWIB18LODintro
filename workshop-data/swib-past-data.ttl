@@ -400,6 +400,7 @@ z:ub schema:knows two:cd .
 
 z:ch schema:name "Christina" .
 z:ch rdfs:label "Christina" .
+z:ch owl:sameAs <https://pad.riseup.net/p/swib-18-ws-facilitators#ch> .
 z:ch schema:location dbr:San_Francisco .
 z:ch schema:knows z:ub .
 z:ch schema:knows z:hk .
@@ -459,6 +460,7 @@ dbr:San_Francisco dbo:country dbr:United_States ;
 a:lr schema:knows c:sp .
 
 z-old:ch rdfs:label "Christina" ;
+    owl:sameAs z:ch ;
     schema:knows z:jh,
         z:ub ;
     schema:location wikidata:Q217346 ;

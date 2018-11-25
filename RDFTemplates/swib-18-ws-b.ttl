@@ -1,0 +1,14 @@
+@prefix b: <https://pad.riseup.net/p/swib-18-ws-b#> .
+@prefix schema: <http://schema.org/> .
+
+b:XX1 schema:name "Group Member 1" .
+b:XX1 schema:location "Group Member 1's Location" .
+
+b:XX2 schema:name "Group Member 2" .
+b:XX2 schema:location "Group Member 2's Location" .
+
+b:XX3 schema:name "Group Member 3" .
+b:XX3 schema:location "Group Member 3's Location" .
+
+b:XX4 schema:name "Group Member 4" .
+b:XX4 schema:location "Group Member 4's Location" .

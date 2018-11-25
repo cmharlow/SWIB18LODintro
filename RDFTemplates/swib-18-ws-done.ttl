@@ -1,0 +1,41 @@
+@prefix z: <https://pad.riseup.net/p/swib-18-ws-facilitators#> .
+@prefix a: <https://pad.riseup.net/p/swib-18-ws-a#> .
+@prefix b: <https://pad.riseup.net/p/swib-18-ws-b#> .
+@prefix c: <https://pad.riseup.net/p/swib-18-ws-c#> .
+@prefix d: <https://pad.riseup.net/p/swib-18-ws-d#> .
+@prefix e: <https://pad.riseup.net/p/swib-18-ws-e#> .
+@prefix f: <https://pad.riseup.net/p/swib-18-ws-f#> .
+@prefix g: <https://pad.riseup.net/p/swib-18-ws-g#> .
+@prefix schema: <http://schema.org/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<> dcterms:creator z:ch .
+<> dcterms:creator z:sw .
+<> schema:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+
+z:sw schema:name "Simeon" .
+z:sw rdfs:label "Simeon" .
+z:sw schema:location wikidata:Q217346 .
+z:sw schema:knows z:ch .
+z:sw schema:knows z:ub .
+z:sw schema:knows a:XX1 .
+z:sw foaf:interest dbr:Music .
+z:sw foaf:interest dbr:Semantic_Web .
+
+z:ch schema:name "Christina" .
+z:ch rdfs:label "Chrisitna" .
+z:ch schema:location dbr:San_Francisco .
+z:ch schema:knows z:sw .
+z:ch schema:knows z:ub .
+z:ch schema:knows b:XX1 .
+z:ch foaf:interest <http://www.wikidata.org/entity/Q28865> .
+z:sw foaf:interest dbr:Music .
+
+z:ub schema:name "Uldis" .
+z:ub rdfs:label "Uldis" .
+z:ub schema:location dbr:Riga .
+z:ub foaf:interest dbr:Music .

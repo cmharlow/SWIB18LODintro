@@ -1,0 +1,3 @@
+[submodule "jena-docker"]
+	path = jena-docker
+	url = https://github.com/stain/jena-docker.git

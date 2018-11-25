@@ -1,0 +1,14 @@
+@prefix z: <https://pad.riseup.net/p/swib-18-ws-facilitators#> .
+@prefix schema: <http://schema.org/> .
+
+z:XX1 schema:name "Group Member 1" .
+z:XX1 schema:location "Group Member 1's Location" .
+
+z:XX2 schema:name "Group Member 2" .
+z:XX2 schema:location "Group Member 2's Location" .
+
+z:XX3 schema:name "Group Member 3" .
+z:XX3 schema:location "Group Member 3's Location" .
+
+z:XX4 schema:name "Group Member 4" .
+z:XX4 schema:location "Group Member 4's Location" .
