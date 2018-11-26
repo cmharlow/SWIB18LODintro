@@ -34,12 +34,13 @@ This introductory workshop aims to introduce the fundamentals of linked data tec
 | -------------- | --------------------------------------------------- |
 | 13:00 - 13:15  | General Workshop Introduction                       |
 | 13:15 - 14:00  | RDF Introduction: Create Your Graph                 |
-| 14:00 - 14:30  | Linked Data Intro.: Link Your Graph to Your Group   |
-| 14:30 - 15:30  | Linked Data & Semantic Web: Expanding Your Graph    |
+| 14:00 - 14:30  | Linked Data Introduction: Link Your Graph           |
+| 14:30 - 15:30  | Linked Data & Semantic Web: Expand Your Graph       |
 | 15:30 - 16:00  | *30 minute break, cake in foyer*                    |
 | 16:00 - 16:15  | Linked Open Data & Licensing: License Your Graph    |
 | 16:15 - 17:15  | Linked Data Experimentation: SPARQL & Visualization |
 | 17:15 - 18:00  | Linked Data Examples, Resources & Questions         |
+
 
 ## Participant Requirements
 
