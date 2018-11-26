@@ -18,9 +18,9 @@
 
 ## Visualization & Query Services
 
-- Our Workshop Data LODLive Visualization:
+- Our Workshop Data LODLive Visualization: http://ec2-3-120-108-78.eu-central-1.compute.amazonaws.com:8080/LodLive/app_en.html
 - Other Open Data LODLive Visualization: http://en.lodlive.it/?http://dbpedia.org/resource/Riga
-- Workshop Fuseki Triplestore:
+- Workshop Fuseki Triplestore: http://ec2-3-120-108-78.eu-central-1.compute.amazonaws.com:8080/fuseki/index.html
 
 ### SPARQL Queries Demoed
 

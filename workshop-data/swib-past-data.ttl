@@ -1,441 +1,371 @@
-@prefix a: <http://etherpad.lobid.org/p/swib-16-ws-a#> .
-@prefix b: <http://etherpad.lobid.org/p/swib16-ws-b#> .
-@prefix c: <http://etherpad.lobid.org/p/swib16-ws-c#> .
-@prefix d: <http://etherpad.lobid.org/p/swib16-ws-d#> .
+@prefix sixteena: <http://etherpad.lobid.org/p/swib16-ws-a#> .
+@prefix sixteenb: <http://etherpad.lobid.org/p/swib16-ws-b#> .
+@prefix sixteenc: <http://etherpad.lobid.org/p/swib16-ws-c#> .
+@prefix sixteene: <http://etherpad.lobid.org/p/swib16-ws-e#> .
+@prefix sixteenf: <http://etherpad.lobid.org/p/swib16-ws-f#> .
+@prefix sixteeng: <http://etherpad.lobid.org/p/swib16-ws-g#> .
+@prefix sixteenz: <http://etherpad.lobid.org/p/swib16-ws-z#> .
+@prefix seventeenone: <https://pad.riseup.net/p/swib-17-ws-1#> .
+@prefix seventeentwo: <https://pad.riseup.net/p/swib-17-ws-2#> .
+@prefix seventeenthree: <https://pad.riseup.net/p/swib-17-ws-3#> .
+@prefix seventeenfour: <https://pad.riseup.net/p/swib-17-ws-4#> .
+@prefix seventeenfive: <https://pad.riseup.net/p/swib-17-ws-5#> .
+@prefix seventeenz: <https://pad.riseup.net/p/swib-17-ws-facilitators#> .
+@prefix eighteena: <https://pad.riseup.net/p/swib-18-ws-a#> .
+@prefix eighteenb: <https://pad.riseup.net/p/swib-18-ws-b#> .
+@prefix eighteenc: <https://pad.riseup.net/p/swib-18-ws-c#> .
+@prefix eighteend: <https://pad.riseup.net/p/swib-18-ws-d#> .
+@prefix eighteene: <https://pad.riseup.net/p/swib-18-ws-e#> .
+@prefix eighteenz: <https://pad.riseup.net/p/swib-18-ws-z#> .
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dbr: <http://dbpedia.org/resource/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix e: <http://etherpad.lobid.org/p/swib16-ws-e#> .
-@prefix f: <http://etherpad.lobid.org/p/swib16-ws-f#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix g: <http://etherpad.lobid.org/p/swib16-ws-g#> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix ns1: <http://xmlns.com/foaf/0.1/:> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
-@prefix wikidata: <http://www.wikidata.org/entity/> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix z: <https://pad.riseup.net/p/swib-17-ws-facilitators#> .
-@prefix z-old: <http://etherpad.lobid.org/p/swib16-ws-z#> .
-@prefix one: <https://pad.riseup.net/p/swib-17-ws-1#> .
-@prefix two: <https://pad.riseup.net/p/swib-17-ws-2#> .
-@prefix three: <https://pad.riseup.net/p/swib-17-ws-3#> .
-@prefix four: <https://pad.riseup.net/p/swib-17-ws-4#> .
-@prefix five: <https://pad.riseup.net/p/swib-17-ws-5#> .
-@prefix six: <https://pad.riseup.net/p/swib-17-ws-6#> .
-@prefix seven: <https://pad.riseup.net/p/swib-17-ws-7#> .
-@prefix eight: <https://pad.riseup.net/p/swib-17-ws-8#> .
-@prefix z: <https://pad.riseup.net/p/swib-17-ws-facilitators#> .
-@prefix schema: <http://schema.org/> .
-@prefix dbr: <http://dbpedia.org/resource/> .
-@prefix wikidata: <http://www.wikidata.org/entity/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix one: <https://pad.riseup.net/p/swib-17-ws-1#> .
-@prefix two: <https://pad.riseup.net/p/swib-17-ws-2#> .
-@prefix three: <https://pad.riseup.net/p/swib-17-ws-3#> .
-@prefix four: <https://pad.riseup.net/p/swib-17-ws-4#> .
-@prefix five: <https://pad.riseup.net/p/swib-17-ws-5#> .
-@prefix six: <https://pad.riseup.net/p/swib-17-ws-6#> .
-@prefix seven: <https://pad.riseup.net/p/swib-17-ws-7#> .
-@prefix eight: <https://pad.riseup.net/p/swib-17-ws-8#> .
-@prefix z: <https://pad.riseup.net/p/swib-17-ws-facilitators#> .
-@prefix schema: <http://schema.org/> .
-@prefix dbr: <http://dbpedia.org/resource/> .
-@prefix wikidata: <https://www.wikidata.org/wiki/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix one: <https://pad.riseup.net/p/swib-17-ws-1#> .
-@prefix two: <https://pad.riseup.net/p/swib-17-ws-2#> .
-@prefix three: <https://pad.riseup.net/p/swib-17-ws-3#> .
-@prefix four: <https://pad.riseup.net/p/swib-17-ws-4#> .
-@prefix five: <https://pad.riseup.net/p/swib-17-ws-5#> .
-@prefix six: <https://pad.riseup.net/p/swib-17-ws-6#> .
-@prefix seven: <https://pad.riseup.net/p/swib-17-ws-7#> .
-@prefix eight: <https://pad.riseup.net/p/swib-17-ws-8#> .
-@prefix z: <https://pad.riseup.net/p/swib-17-ws-facilitators#> .
-@prefix schema: <http://schema.org/> .
-@prefix dbr: <http://dbpedia.org/resource/> .
-@prefix wikidata: <http://www.wikidata.org/entity/> .
-@prefix foaf: <http://xlmns.com/foaf/0.1/> .
-@prefix one: <https://pad.riseup.net/p/swib-17-ws-1#> .
-@prefix two: <https://pad.riseup.net/p/swib-17-ws-2#> .
-@prefix three: <https://pad.riseup.net/p/swib-17-ws-3#> .
-@prefix four: <https://pad.riseup.net/p/swib-17-ws-4#> .
-@prefix five: <https://pad.riseup.net/p/swib-17-ws-5#> .
-@prefix six: <https://pad.riseup.net/p/swib-17-ws-6#> .
-@prefix seven: <https://pad.riseup.net/p/swib-17-ws-7#> .
-@prefix eight: <https://pad.riseup.net/p/swib-17-ws-8#> .
-@prefix z: <https://pad.riseup.net/p/swib-17-ws-facilitators#> .
-@prefix schema: <http://schema.org/> .
-@prefix dbr: <http://dbpedia.org/page/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix wikientity: <http://www.wikidata.org/entity/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix one: <https://pad.riseup.net/p/swib-17-ws-1#> .
-@prefix two: <https://pad.riseup.net/p/swib-17-ws-2#> .
-@prefix three: <https://pad.riseup.net/p/swib-17-ws-3#> .
-@prefix four: <https://pad.riseup.net/p/swib-17-ws-4#> .
-@prefix five: <https://pad.riseup.net/p/swib-17-ws-5#> .
-@prefix six: <https://pad.riseup.net/p/swib-17-ws-6#> .
-@prefix seven: <https://pad.riseup.net/p/swib-17-ws-7#> .
-@prefix eight: <https://pad.riseup.net/p/swib-17-ws-8#> .
-@prefix z: <https://pad.riseup.net/p/swib-17-ws-facilitators#> .
-@prefix schema: <http://schema.org/> .
-@prefix dbr: <http://dbpedia.org/resource/> .
-@prefix wikidata: <https://www.wikidata.org/entity> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix one: <https://pad.riseup.net/p/swib-17-ws-1#> .
-@prefix two: <https://pad.riseup.net/p/swib-17-ws-2#> .
-@prefix three: <https://pad.riseup.net/p/swib-17-ws-3#> .
-@prefix four: <https://pad.riseup.net/p/swib-17-ws-4#> .
-@prefix five: <https://pad.riseup.net/p/swib-17-ws-5#> .
-@prefix six: <https://pad.riseup.net/p/swib-17-ws-6#> .
-@prefix seven: <https://pad.riseup.net/p/swib-17-ws-7#> .
-@prefix eight: <https://pad.riseup.net/p/swib-17-ws-8#> .
-@prefix z: <https://pad.riseup.net/p/swib-17-ws-facilitators#> .
-@prefix schema: <http://schema.org/> .
-@prefix dbr: <http://dbpedia.org/resource/> .
-@prefix wikidata: <https://www.wikidata.org/entity/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-five:RHO schema:name "René" .
-five:RHO rdfs:label "René" .
-five:RHO schema:location dbr:Copenhagen .
-five:RHO schema:topic_interest dbr:Korean-Mexican_fusion .
-five:RHO schema:topic_interest dbr:Food .
-five:RHO schema:topic_interest dbr:Wine .
-five:RHO schema:knows five:jl .
-five:RHO schema:knows five:BP .
-five:RHO schema:knows five:GN .
-five:RHO schema:knows one:lj .
-five:RHO schema:knows three:em .
-five:RHO schema:knows two:cd .
-five:RHO schema:knows z:ub .
+seventeenfive:RHO schema:name "René" .
+seventeenfive:RHO rdfs:label "René" .
+seventeenfive:RHO schema:location dbr:Copenhagen .
+seventeenfive:RHO schema:topic_interest dbr:Korean-Mexican_fusion .
+seventeenfive:RHO schema:topic_interest dbr:Food .
+seventeenfive:RHO schema:topic_interest dbr:Wine .
+seventeenfive:RHO schema:knows seventeenfive:jl .
+seventeenfive:RHO schema:knows seventeenfive:BP .
+seventeenfive:RHO schema:knows seventeenfive:GN .
+seventeenfive:RHO schema:knows seventeenone:lj .
+seventeenfive:RHO schema:knows seventeenthree:em .
+seventeenfive:RHO schema:knows seventeentwo:cd .
+seventeenfive:RHO schema:knows seventeenz:ub .
 
-five:BP schema:name "Bart Peeters".
-five:BP rdfs:label "Bart Peeters".
-five:BP schema:location dbr:Leuven .
-five:BP schema:location wikidata:Q118958 .
-five:BP schema:topic_interest dbr:Football .
-five:BP schema:topic_interest dbr:Stella_Artois .
-five:BP schema:knows five:gn .
-five:BP schema:knows five:RHO .
-five:BP schema:knows five:jl .
-five:BP schema:knows one:fk .
-five:BP schema:knows two:dj .
-five:BP schema:knows four:tk .
+seventeenfive:BP schema:name "Bart Peeters".
+seventeenfive:BP rdfs:label "Bart Peeters".
+seventeenfive:BP schema:location dbr:Leuven .
+seventeenfive:BP schema:location wikidata:Q118958 .
+seventeenfive:BP schema:topic_interest dbr:Football .
+seventeenfive:BP schema:topic_interest dbr:Stella_Artois .
+seventeenfive:BP schema:knows seventeenfive:gn .
+seventeenfive:BP schema:knows seventeenfive:RHO .
+seventeenfive:BP schema:knows seventeenfive:jl .
+seventeenfive:BP schema:knows seventeenone:fk .
+seventeenfive:BP schema:knows seventeentwo:dj .
+seventeenfive:BP schema:knows seventeenfour:tk .
 
-five:jl schema:name "Jakob" .
-five:jl rdfs:label "Jakob" .
-five:jl schema:location dbr:Kolding .
-five:jl schema:topic_interest dbr:Music .
-five:jl schema:topic_interest dbr:Food .
-five:jl schema:topic_interest dbr:Wine .
-five:jl schema:knows five:RHO .
-five:jl schema:knows five:BP .
-five:jl schema:knows five:GN .
-five:jl schema:knows one:D .
-five:jl schema:knows two:mvb .
-five:jl schema:knows one:lj .
+seventeenfive:jl schema:name "Jakob" .
+seventeenfive:jl rdfs:label "Jakob" .
+seventeenfive:jl schema:location dbr:Kolding .
+seventeenfive:jl schema:topic_interest dbr:Music .
+seventeenfive:jl schema:topic_interest dbr:Food .
+seventeenfive:jl schema:topic_interest dbr:Wine .
+seventeenfive:jl schema:knows seventeenfive:RHO .
+seventeenfive:jl schema:knows seventeenfive:BP .
+seventeenfive:jl schema:knows seventeenfive:GN .
+seventeenfive:jl schema:knows seventeenone:D .
+seventeenfive:jl schema:knows seventeentwo:mvb .
+seventeenfive:jl schema:knows seventeenone:lj .
 
-five:gn schema:name "Gijs Noels" .
-five:gn rdfs:label "Gijs Noels" .
-five:gn schema:location dbr:Oostham .
-five:gn schema:location wikidata:Q695354 .
-five:gn foaf:topic_interest wikidata:Q5463334 .
-five:gn schema:knows five:bp .
-five:gn schema:knows five:RHO .
-five:gn schema:knows five:jl .
-five:gn schema:knows one:lj .
-five:gn schema:knows two:vgj .
-five:gn schema:knows three:hw .
-five:gn schema:knows four:aa .
+seventeenfive:gn schema:name "Gijs Noels" .
+seventeenfive:gn rdfs:label "Gijs Noels" .
+seventeenfive:gn schema:location dbr:Oostham .
+seventeenfive:gn schema:location wikidata:Q695354 .
+seventeenfive:gn foaf:topic_interest wikidata:Q5463334 .
+seventeenfive:gn schema:knows seventeenfive:bp .
+seventeenfive:gn schema:knows seventeenfive:RHO .
+seventeenfive:gn schema:knows seventeenfive:jl .
+seventeenfive:gn schema:knows seventeenone:lj .
+seventeenfive:gn schema:knows seventeentwo:vgj .
+seventeenfive:gn schema:knows seventeenthree:hw .
+seventeenfive:gn schema:knows seventeenfour:aa .
 
-four:cc schema:name "Carol" .
-four:cc rdfs:label "Carol" .
-four:cc schema:location dbr:Edinburgh .
-four:cc schema:knows four:ms .
-four:cc schema:knows four:tk .
-four:cc schema:knows four:aa .
-four:cc schema:knows two:mk .
-four:cc foaf:topic_interest dbr:Art .
+seventeenfour:cc schema:name "Carol" .
+seventeenfour:cc rdfs:label "Carol" .
+seventeenfour:cc schema:location dbr:Edinburgh .
+seventeenfour:cc schema:knows seventeenfour:ms .
+seventeenfour:cc schema:knows seventeenfour:tk .
+seventeenfour:cc schema:knows seventeenfour:aa .
+seventeenfour:cc schema:knows seventeentwo:mk .
+seventeenfour:cc foaf:topic_interest dbr:Art .
 
+seventeenfour:tk schema:name "Thomas Kirchhoff" .
+seventeenfour:tk rdfs:label "Thomas Kirchhoff" .
+seventeenfour:tk schema:location wikidata:Q3834 .
+seventeenfour:tk schema:location dbr:Konstanz .
+seventeenfour:tk schema:knows seventeenfour:aa .
+seventeenfour:tk schema:knows seventeenfour:cc .
+seventeenfour:tk schema:knows seventeenfour:ms .
+seventeenfour:tk schema:knows seventeentwo:dj .
+seventeenfour:tk schema:knows seventeenfive:BP .
+seventeenfour:tk schema:knows seventeenone:fk .
+seventeenfour:tk foaf:topic_interest dbr:Physics .
 
+seventeenfour:ms schema:name "Martin" .
+seventeenfour:ms rdfs:label "Martin" .
+seventeenfour:ms schema:location dbr:Edinburgh .
+seventeenfour:ms schema:knows seventeenfour:cc .
+seventeenfour:ms schema:knows seventeenfour:tk .
+seventeenfour:ms schema:knows seventeenfour:aa .
+seventeenfour:ms schema:knows seventeenone:ml .
+seventeenfour:ms schema:knows seventeenone:ws .
+seventeenfour:ms schema:knows seventeenthree:as .
+seventeenfour:ms foaf:topic_interest dbr:Music .
+seventeenfour:ms foaf:topic_interest dbr:Freak .
 
-four:tk schema:name "Thomas Kirchhoff" .
-four:tk rdfs:label "Thomas Kirchhoff" .
-four:tk schema:location wikidata:Q3834 .
-four:tk schema:location dbr:Konstanz .
-four:tk schema:knows four:aa .
-four:tk schema:knows four:cc .
-four:tk schema:knows four:ms .
-four:tk schema:knows two:dj .
-four:tk schema:knows five:BP .
-four:tk schema:knows one:fk .
-four:tk foaf:topic_interest dbr:Physics .
-
-four:ms schema:name "Martin" .
-four:ms rdfs:label "Martin" .
-four:ms schema:location dbr:Edinburgh .
-four:ms schema:knows four:cc .
-four:ms schema:knows four:tk .
-four:ms schema:knows four:aa .
-four:ms schema:knows one:ml .
-four:ms schema:knows one:ws .
-four:ms schema:knows three:as .
-four:ms foaf:topic_interest dbr:Music .
-four:ms foaf:topic_interest dbr:Freak .
-
-four:aa schema:name "Anthi" .
-four:aa rdfs:label "Anthi" .
-four:aa schema:location dbr:Athens .
-four:aa schema:knows four:cc .
-four:aa schema:knows four:tk .
-four:aa schema:knows four:ms .
-four:aa schema:knows three:mb .
-four:aa schema:knows z:hk .
-four:aa schema:knows two:vgj .
-four:aa schema:knows one:lj .
-four:aa schema:knows five:gh .
-four:aa schema:knows three:hw .
-four:aa foaf:topic_interest <http://dbpedia.org/resource/Music>.
+seventeenfour:aa schema:name "Anthi" .
+seventeenfour:aa rdfs:label "Anthi" .
+seventeenfour:aa schema:location dbr:Athens .
+seventeenfour:aa schema:knows seventeenfour:cc .
+seventeenfour:aa schema:knows seventeenfour:tk .
+seventeenfour:aa schema:knows seventeenfour:ms .
+seventeenfour:aa schema:knows seventeenthree:mb .
+seventeenfour:aa schema:knows seventeenz:hk .
+seventeenfour:aa schema:knows seventeentwo:vgj .
+seventeenfour:aa schema:knows seventeenone:lj .
+seventeenfour:aa schema:knows seventeenfive:gh .
+seventeenfour:aa schema:knows seventeenthree:hw .
+seventeenfour:aa foaf:topic_interest <http://dbpedia.org/resource/Music>.
 
 
-three:hw schema:name "Heinrich Karl" .
-three:hw rdfs:label "Heinrich Karl" .
-three:hw schema:location dbr:Hamburg .
-three:hw schema:location wikientity:Q264130 .
-three:hw schema:knows three:as .
-three:hw schema:knows three:mb .
-three:hw schema:knows three:em .
-three:hw schema:knows one:lj .
-three:hw schema:knows two:vgj .
-three:hw schema:knows four:aa .
-three:hw schema:knows five:gn .
-three:hw foaf:interest_topic wikidata:Dancing_Lady .
-three:hw foaf:interest_topic wikidata:Eintracht_Frankfurt .
+seventeenthree:hw schema:name "Heinrich Karl" .
+seventeenthree:hw rdfs:label "Heinrich Karl" .
+seventeenthree:hw schema:location dbr:Hamburg .
+seventeenthree:hw schema:location wikientity:Q264130 .
+seventeenthree:hw schema:knows seventeenthree:as .
+seventeenthree:hw schema:knows seventeenthree:mb .
+seventeenthree:hw schema:knows seventeenthree:em .
+seventeenthree:hw schema:knows seventeenone:lj .
+seventeenthree:hw schema:knows seventeentwo:vgj .
+seventeenthree:hw schema:knows seventeenfour:aa .
+seventeenthree:hw schema:knows seventeenfive:gn .
+seventeenthree:hw foaf:interest_topic wikidata:Dancing_Lady .
+seventeenthree:hw foaf:interest_topic wikidata:Eintracht_Frankfurt .
 
-three:as schema:name "Abigail" .
-three:as rdfs:label "Abigail" .
-three:as schema:location wikidata:Q2096 .
-three:as foaf:topic_interest dbr:Cycling .
-three:as foaf:topic_interest dbr:Wine .
-three:as schema:knows three:hw .
-three:as schema:knows three:mb .
-three:as schema:knows three:em .
-three:as schema:knows one:ws .
-three:as schema:knows four:ms .
-three:as schema:knows one:ml .
+seventeenthree:as schema:name "Abigail" .
+seventeenthree:as rdfs:label "Abigail" .
+seventeenthree:as schema:location wikidata:Q2096 .
+seventeenthree:as foaf:topic_interest dbr:Cycling .
+seventeenthree:as foaf:topic_interest dbr:Wine .
+seventeenthree:as schema:knows seventeenthree:hw .
+seventeenthree:as schema:knows seventeenthree:mb .
+seventeenthree:as schema:knows seventeenthree:em .
+seventeenthree:as schema:knows seventeenone:ws .
+seventeenthree:as schema:knows seventeenfour:ms .
+seventeenthree:as schema:knows seventeenone:ml .
 
-three:mb schema:name "Martin\"Barber " .
-three:mb rdfs:label "Martin\"Barber " .
-three:mb schema:location wikidata:Q1715 .
-three:mb schema:knows three:hw .
-three:mb schema:knows three:as .
-three:mb schema:knows three:em .
-three:mb schema:knows z:uk .
-three:mb foaf:topic_interest wikidata:Q33748 .
+seventeenthree:mb schema:name "Martin Barber" .
+seventeenthree:mb rdfs:label "Martin Barber" .
+seventeenthree:mb schema:location wikidata:Q1715 .
+seventeenthree:mb schema:knows seventeenthree:hw .
+seventeenthree:mb schema:knows seventeenthree:as .
+seventeenthree:mb schema:knows seventeenthree:em .
+seventeenthree:mb schema:knows seventeenz:uk .
+seventeenthree:mb foaf:topic_interest wikidata:Q33748 .
 
-three:em schema:name "Eke" .
-three:em rdfs:label "Eke" .
-three:em schema:location dbr:Zürich .
-three:em schema:knows three:hw .
-three:em schema:knows three:as .
-three:em schema:knows three:mb .
-three:em schema:knows five:RHO .
-three:em schema:knows z:ub .
-three:em schema:knows two:cd .
-three:em foaf:topic_interest dbr:Street_photography .
+seventeenthree:em schema:name "Eke" .
+seventeenthree:em rdfs:label "Eke" .
+seventeenthree:em schema:location dbr:Zürich .
+seventeenthree:em schema:knows seventeenthree:hw .
+seventeenthree:em schema:knows seventeenthree:as .
+seventeenthree:em schema:knows seventeenthree:mb .
+seventeenthree:em schema:knows seventeenfive:RHO .
+seventeenthree:em schema:knows seventeenz:ub .
+seventeenthree:em schema:knows seventeentwo:cd .
+seventeenthree:em foaf:topic_interest dbr:Street_photography .
 
-two:vgj schema:name "Victor".
-two:vgj rdfs:label "Victor".
-two:vgj schema:location wikidata:Q1305 .
-two:vgj schema:location dbr:Wageningen .
-two:vgj schema:knows two:mvb .
-two:vgj schema:knows two:cd .
-two:vgj schema:knows two:dj .
-two:vgj schema:knows two:mk .
-two:vgj schema:knows one:lj .
-two:vgj schema:knows three:hw .
-two:vgj schema:knows four:aa .
-two:vgj schema:knows five:gn .
-two:vgj schema:interest_topic dbr:Birdwatching .
-two:vgj schema:interest_topic dbr:Association_football .
-two:vgj schema:interest_topic dbr:SQL .
+seventeentwo:vgj schema:name "Victor".
+seventeentwo:vgj rdfs:label "Victor".
+seventeentwo:vgj schema:location wikidata:Q1305 .
+seventeentwo:vgj schema:location dbr:Wageningen .
+seventeentwo:vgj schema:knows seventeentwo:mvb .
+seventeentwo:vgj schema:knows seventeentwo:cd .
+seventeentwo:vgj schema:knows seventeentwo:dj .
+seventeentwo:vgj schema:knows seventeentwo:mk .
+seventeentwo:vgj schema:knows seventeenone:lj .
+seventeentwo:vgj schema:knows seventeenthree:hw .
+seventeentwo:vgj schema:knows seventeenfour:aa .
+seventeentwo:vgj schema:knows seventeenfive:gn .
+seventeentwo:vgj schema:interest_topic dbr:Birdwatching .
+seventeentwo:vgj schema:interest_topic dbr:Association_football .
+seventeentwo:vgj schema:interest_topic dbr:SQL .
 
-two:mvb schema:name "Marion" .
-two:mvb rdfs:label "Marion" .
-two:mvb schema:location wikidata:Q727 .
-two:mvb schema:knows two:dj .
-two:mvb schema:knows two:mvb .
-two:mvb schema:knows two:vgj .
-two:mvb schema:knows two:cd .
-two:mvb schema:knows five:jl .
-two:mvb schema:knows one:D .
-two:mvb foaf:topic_interest dbr:Reading .
+seventeentwo:mvb schema:name "Marion" .
+seventeentwo:mvb rdfs:label "Marion" .
+seventeentwo:mvb schema:location wikidata:Q727 .
+seventeentwo:mvb schema:knows seventeentwo:dj .
+seventeentwo:mvb schema:knows seventeentwo:mvb .
+seventeentwo:mvb schema:knows seventeentwo:vgj .
+seventeentwo:mvb schema:knows seventeentwo:cd .
+seventeentwo:mvb schema:knows seventeenfive:jl .
+seventeentwo:mvb schema:knows seventeenone:D .
+seventeentwo:mvb foaf:topic_interest dbr:Reading .
 
-two:cd schema:name "Charles" .
-two:cd rdfs:label "Charles" .
-two:cd schema:location dbr:Munich .
-two:cd schema:knows two:vgj .
-two:cd schema:knows two:mvb .
-two:cd schema:knows two:dj .
-two:cd schema:knows two:mk .
-two:cd schema:knows three:em .
-two:cd schema:knows five:RHO .
-two:cd schema:knows z:ub .
-two:cd foaf:topic_interest dbr:Philology .
-two:cd foaf:topic_interest dbr:Tea .
+seventeentwo:cd schema:name "Charles" .
+seventeentwo:cd rdfs:label "Charles" .
+seventeentwo:cd schema:location dbr:Munich .
+seventeentwo:cd schema:knows seventeentwo:vgj .
+seventeentwo:cd schema:knows seventeentwo:mvb .
+seventeentwo:cd schema:knows seventeentwo:dj .
+seventeentwo:cd schema:knows seventeentwo:mk .
+seventeentwo:cd schema:knows seventeenthree:em .
+seventeentwo:cd schema:knows seventeenfive:RHO .
+seventeentwo:cd schema:knows seventeenz:ub .
+seventeentwo:cd foaf:topic_interest dbr:Philology .
+seventeentwo:cd foaf:topic_interest dbr:Tea .
 
-two:dj schema:name "Daniel" .
-two:dj rdfs:label "Daniel" .
-two:dj schema:givenName "Daniel" .
-two:dj schema:location dbr:Hamburg .
-two:dj schema:location wikidata:Q1055 .
-two:dj schema:knows two:dj .
-two:dj schema:knows two:vgj .
-two:dj schema:knows two:mvb .
-two:dj schema:knows two:cd .
-two:dj schema:knows two:mk .
-two:dj schema:knows one:fk .
-two:dj schema:knows four:tk .
-two:dj schema:knows five:BP .
-two:dj foaf:topic_interest wikidata:Q105844 .
+seventeentwo:dj schema:name "Daniel" .
+seventeentwo:dj rdfs:label "Daniel" .
+seventeentwo:dj schema:givenName "Daniel" .
+seventeentwo:dj schema:location dbr:Hamburg .
+seventeentwo:dj schema:location wikidata:Q1055 .
+seventeentwo:dj schema:knows seventeentwo:dj .
+seventeentwo:dj schema:knows seventeentwo:vgj .
+seventeentwo:dj schema:knows seventeentwo:mvb .
+seventeentwo:dj schema:knows seventeentwo:cd .
+seventeentwo:dj schema:knows seventeentwo:mk .
+seventeentwo:dj schema:knows seventeenone:fk .
+seventeentwo:dj schema:knows seventeenfour:tk .
+seventeentwo:dj schema:knows seventeenfive:BP .
+seventeentwo:dj foaf:topic_interest wikidata:Q105844 .
 
-two:mk schema:name "Marianne" .
-two:mk rdfs:label "Marianne" .
-two:mk schema:location dbr:Amsterdam .
-two:mk schema:location wikidata:Q727 .
-two:mk schema:knows two:vgj .
-two:mk schema:knows two:mvb .
-two:mk schema:knows two:cd .
-two:mk schema:knows two:dj .
-two:mk schema:knows four:cc .
-two:mk foaf:topic_interest dbr:Tea .
+seventeentwo:mk schema:name "Marianne" .
+seventeentwo:mk rdfs:label "Marianne" .
+seventeentwo:mk schema:location dbr:Amsterdam .
+seventeentwo:mk schema:location wikidata:Q727 .
+seventeentwo:mk schema:knows seventeentwo:vgj .
+seventeentwo:mk schema:knows seventeentwo:mvb .
+seventeentwo:mk schema:knows seventeentwo:cd .
+seventeentwo:mk schema:knows seventeentwo:dj .
+seventeentwo:mk schema:knows seventeenfour:cc .
+seventeentwo:mk foaf:topic_interest dbr:Tea .
 
-one:ml schema:name "Martijn Lens" .
-one:ml rdfs:label "Martijn Lens" .
-one:ml schema:location dbr:Leiden .
-one:ml schema:knows one:fk .
-one:ml schema:knows one:D .
-one:ml schema:knows one:lj .
-one:ml schema:knows one:ws .
-one:ml schema:knows three:as .
-one:ml foaf:topic_interest wikidata:Q49228 .
-one:ml foaf:topic_interest wikidata:Q8192 .
+seventeenone:ml schema:name "Martijn Lens" .
+seventeenone:ml rdfs:label "Martijn Lens" .
+seventeenone:ml schema:location dbr:Leiden .
+seventeenone:ml schema:knows seventeenone:fk .
+seventeenone:ml schema:knows seventeenone:D .
+seventeenone:ml schema:knows seventeenone:lj .
+seventeenone:ml schema:knows seventeenone:ws .
+seventeenone:ml schema:knows seventeenthree:as .
+seventeenone:ml foaf:topic_interest wikidata:Q49228 .
+seventeenone:ml foaf:topic_interest wikidata:Q8192 .
 
-one:fk schema:name "Frank Koper" .
-one:fk rdfs:label "Frank Koper" .
-one:fk schema:location wikidata:Q803 .
-one:fk schema:location dbr:Utrecht .
-one:fk schema:knows one:ml .
-one:fk schema:knows one:D .
-one:fk schema:knows one:ws .
-one:fk schema:knows one:lj .
-one:fk schema:knows two:dj .
-one:fk schema:knows four:tk .
-one:fk schema:knows five:BP .
-one:fk foaf:topic_interest dbr:Cycling .
-one:fk foaf:topic_interest wikidata:Q1240821 .
-
-
-one:D schema:name "Daniel" .
-one:D rdfs:label "Daniel" .
-one:D schema:location "Utrecht" .
-one:D schema:knows one:lj .
-one:D schema:knows one:fk .
-one:D schema:knows one:ml .
-one:D schema:knows one:ws .
-one:D schema:knows one:D .
-one:D schema:knows two:mvb .
-one:D schema:knows five:jl .
-one:D schema:location wikidata:Q803 .
-one:D schema:location dbr:Utrecht .
-one:D foaf:topic_interest dbr:music .
-one:D foaf:topic_interest wikidata:Q167987 .
-one:D foaf:topic_interest wikidata:Q201405 .
+seventeenone:fk schema:name "Frank Koper" .
+seventeenone:fk rdfs:label "Frank Koper" .
+seventeenone:fk schema:location wikidata:Q803 .
+seventeenone:fk schema:location dbr:Utrecht .
+seventeenone:fk schema:knows seventeenone:ml .
+seventeenone:fk schema:knows seventeenone:D .
+seventeenone:fk schema:knows seventeenone:ws .
+seventeenone:fk schema:knows seventeenone:lj .
+seventeenone:fk schema:knows seventeentwo:dj .
+seventeenone:fk schema:knows seventeenfour:tk .
+seventeenone:fk schema:knows seventeenfive:BP .
+seventeenone:fk foaf:topic_interest dbr:Cycling .
+seventeenone:fk foaf:topic_interest wikidata:Q1240821 .
 
 
-one:lj schema:name "Line Jung Lindhard" .
-one:lj rdfs:label "Line Jung Lindhard" .
-one:lj schema:location wikidata:Q3223801 .
-one:lj schema:location dbr:Frederikssund .
-one:lj schema:knows one:ml .
-one:lj schema:knows one:fk .
-one:lj schema:knows one:D .
-one:lj schema:knows one:ws .
-one:lj schema:knows two:vgj .
-one:lj schema:knows three:hw .
-one:lj schema:knows four:aa .
-one:lj schema:knows five:gn .
-one:lj foaf:topic_interest wikidata:Q8242 .
-one:lj foaf:topic_interest wikidata:Q638 .
+seventeenone:D schema:name "Daniel" .
+seventeenone:D rdfs:label "Daniel" .
+seventeenone:D schema:location "Utrecht" .
+seventeenone:D schema:knows seventeenone:lj .
+seventeenone:D schema:knows seventeenone:fk .
+seventeenone:D schema:knows seventeenone:ml .
+seventeenone:D schema:knows seventeenone:ws .
+seventeenone:D schema:knows seventeenone:D .
+seventeenone:D schema:knows seventeentwo:mvb .
+seventeenone:D schema:knows seventeenfive:jl .
+seventeenone:D schema:location wikidata:Q803 .
+seventeenone:D schema:location dbr:Utrecht .
+seventeenone:D foaf:topic_interest dbr:music .
+seventeenone:D foaf:topic_interest wikidata:Q167987 .
+seventeenone:D foaf:topic_interest wikidata:Q201405 .
 
-one:ws schema:name "Wenke Siegert" .
-one:ws rdfs:label "Wenke Siegert" .
-one:ws schema:location wikidata:Q1055 .
-one:ws schema:location dbr:Hamburg .
-one:ws schema:knows one:ml .
-one:ws schema:knows one:fk .
-one:ws schema:knows one:D .
-one:ws schema:knows one:lj .
-one:ws schema:knows three:as .
-one:ws schema:knows four:ms .
-one:ws foaf:topic_interest wikidata:Q6607 .
 
-z:ub schema:name "Uldis" .
-z:ub rdfs:label "Uldis" .
-z:ub schema:location dbr:Riga .
-z:ub schema:knows z:ch .
-z:ub schema:knows z:hk .
+seventeenone:lj schema:name "Line Jung Lindhard" .
+seventeenone:lj rdfs:label "Line Jung Lindhard" .
+seventeenone:lj schema:location wikidata:Q3223801 .
+seventeenone:lj schema:location dbr:Frederikssund .
+seventeenone:lj schema:knows seventeenone:ml .
+seventeenone:lj schema:knows seventeenone:fk .
+seventeenone:lj schema:knows seventeenone:D .
+seventeenone:lj schema:knows seventeenone:ws .
+seventeenone:lj schema:knows seventeentwo:vgj .
+seventeenone:lj schema:knows seventeenthree:hw .
+seventeenone:lj schema:knows seventeenfour:aa .
+seventeenone:lj schema:knows seventeenfive:gn .
+seventeenone:lj foaf:topic_interest wikidata:Q8242 .
+seventeenone:lj foaf:topic_interest wikidata:Q638 .
 
-z:ub foaf:topic_interest dbr:Music .
-z:ub foaf:topic_interest dbr:Semantic_Web .
+seventeenone:ws schema:name "Wenke Siegert" .
+seventeenone:ws rdfs:label "Wenke Siegert" .
+seventeenone:ws schema:location wikidata:Q1055 .
+seventeenone:ws schema:location dbr:Hamburg .
+seventeenone:ws schema:knows seventeenone:ml .
+seventeenone:ws schema:knows seventeenone:fk .
+seventeenone:ws schema:knows seventeenone:D .
+seventeenone:ws schema:knows seventeenone:lj .
+seventeenone:ws schema:knows seventeenthree:as .
+seventeenone:ws schema:knows seventeenfour:ms .
+seventeenone:ws foaf:topic_interest wikidata:Q6607 .
 
-z:ub schema:knows three:em .
-z:ub schema:knows five:RHO .
-z:ub schema:knows two:cd .
+seventeenz:ub schema:name "Uldis" .
+seventeenz:ub rdfs:label "Uldis" .
+seventeenz:ub schema:location dbr:Riga .
+seventeenz:ub schema:knows seventeenz:ch .
+seventeenz:ub schema:knows seventeenz:hk .
 
-z:ch schema:name "Christina" .
-z:ch rdfs:label "Christina" .
-z:ch owl:sameAs <https://pad.riseup.net/p/swib-18-ws-facilitators#ch> .
-z:ch schema:location dbr:San_Francisco .
-z:ch schema:knows z:ub .
-z:ch schema:knows z:hk .
+seventeenz:ub foaf:topic_interest dbr:Music .
+seventeenz:ub foaf:topic_interest dbr:Semantic_Web .
 
-z:hk schema:name "Huda" .
-z:hk rdfs:label "Huda" .
-z:hk schema:location wikidata:Q217346 .
-z:hk schema:knows z:ch .
-z:hk schema:knows z:ub .
+seventeenz:ub schema:knows seventeenthree:em .
+seventeenz:ub schema:knows seventeenfive:RHO .
+seventeenz:ub schema:knows seventeentwo:cd .
 
-<file:///Users/sul.cmharlow/Presentations/SWIB17LODintro/workshop-data/swib-past-data.ttl> dcterms:creator b:oj,
-        c:ns,
-        c:rr,
-        c:sp,
-        c:va,
-        e:da,
-        e:ev,
-        e:lh,
-        e:ml,
-        f:hs,
-        f:kp,
-        f:sh,
-        g:ae,
-        g:js,
-        g:ls,
-        z-old:ch,
-        z-old:jh,
-        z-old:ub,
-        z:ch,
-        z:hk,
-        z:ub ;
+seventeenz:ch schema:name "Christina" .
+seventeenz:ch rdfs:label "Christina" .
+seventeenz:ch owl:sameAs <https://pad.riseup.net/p/swib-18-ws-z#ch> .
+seventeenz:ch schema:location dbr:San_Francisco .
+seventeenz:ch schema:knows seventeenz:ub .
+seventeenz:ch schema:knows seventeenz:hk .
+
+seventeenz:hk schema:name "Huda" .
+seventeenz:hk rdfs:label "Huda" .
+seventeenz:hk schema:location wikidata:Q217346 .
+seventeenz:hk schema:knows seventeenz:ch .
+seventeenz:hk schema:knows seventeenz:ub .
+
+<file:///Users/sul.cmharlow/Presentations/SWIB17LODintro/workshop-data/swib-past-data.ttl> dcterms:creator sixteenb:oj,
+        sixteenc:ns,
+        sixteenc:rr,
+        sixteenc:sp,
+        sixteenc:va,
+        sixteene:da,
+        sixteene:ev,
+        sixteene:lh,
+        sixteene:ml,
+        sixteenf:hs,
+        sixteenf:kp,
+        sixteenf:sh,
+        sixteeng:ae,
+        sixteeng:js,
+        sixteeng:ls,
+        sixteenz:ch,
+        sixteenz:jh,
+        sixteenz:ub,
+        seventeenz:ch,
+        seventeenz:hk,
+        seventeenz:ub ;
     schema:license <https://creativecommons.org/licenses/by/2.0/de/>,
         <https://creativecommons.org/publicdomain/zero/1.0/> .
 
-e:ih schema:knows c:sp .
+sixteene:ih schema:knows sixteenc:sp .
 
 dbr:Bonn dbo:country dbr:Germany ;
     dbo:populationTotal "311287"^^xsd:nonNegativeInteger,
@@ -457,25 +387,25 @@ dbr:San_Francisco dbo:country dbr:United_States ;
     dbo:populationTotal "864816"^^xsd:nonNegativeInteger,
         "864816" .
 
-a:lr schema:knows c:sp .
+sixteena:lr schema:knows sixteenc:sp .
 
-z-old:ch rdfs:label "Christina" ;
-    owl:sameAs z:ch ;
-    schema:knows z:jh,
-        z:ub ;
+sixteenz:ch rdfs:label "Christina" ;
+    owl:sameAs seventeenz:ch, eighteenz:ch ;
+    schema:knows sixteenz:jh,
+        sixteenz:ub ;
     schema:location wikidata:Q217346 ;
     schema:name "Christina" ;
-    owl:sameAs z:ch ;
+    owl:sameAs eighteenz:ch ;
     foaf:interest dbr:Semantic_Web,
         wikidata:Q28865 .
 
-z-old:ub rdfs:label "Uldis" ;
-    schema:knows z:ch,
-        z:jh ;
+sixteenz:ub rdfs:label "Uldis" ;
+    schema:knows sixteenz:ch,
+        sixteenz:jh ;
     schema:location dbr:Riga ;
     schema:name "Uldis" ;
-    owl:sameAs z:ub ;
-    ns1:interest dbr:Semantic_Web ;
+    owl:sameAs seventeenz:ub ;
+    foaf:interest dbr:Semantic_Web ;
     foaf:interest dbr:Music .
 
 dbr:Riga dbo:country dbr:Latvia ;
@@ -486,75 +416,75 @@ dbr:Stockholm dbo:country dbr:Sweden ;
     dbo:populationTotal "925934"^^xsd:nonNegativeInteger,
         "925934" .
 
-z-old:jh rdfs:label "Jana" ;
-    schema:knows f:bb,
-        z:ch,
-        z:ub ;
+sixteenz:jh rdfs:label "Jana" ;
+    schema:knows sixteenf:bb,
+        sixteenz:ch,
+        sixteenz:ub ;
     schema:location "Frankfurt" ;
     schema:name "Jana" ;
     foaf:interest dbr:Music .
 
-b:ag rdfs:label "Astrid" ;
-    schema:knows a:pl,
-        b:ml,
-        b:oj,
-        c:ns,
-        e:bb ;
+sixteenb:ag rdfs:label "Astrid" ;
+    schema:knows sixteena:pl,
+        sixteenb:ml,
+        sixteenb:oj,
+        sixteenc:ns,
+        sixteene:bb ;
     schema:location dbr:Bonn,
         "Bonn" ;
     schema:name "Astrid" ;
     foaf:interest dbr:Guiseppe_Verdi,
         dbr:Music .
 
-g:ae rdfs:label "Amr" ;
-    schema:knows f:sh,
-        g:js,
-        g:ls ;
+sixteeng:ae rdfs:label "Amr" ;
+    schema:knows sixteenf:sh,
+        sixteeng:js,
+        sixteeng:ls ;
     schema:location dbr:Qatar ;
     schema:name "Amr" ;
     foaf:interest dbr:Squash .
 
-g:ls rdfs:label "Lisa" ;
-    schema:knows a:gc,
-        c:ns,
-        g:ae,
-        g:js ;
+sixteeng:ls rdfs:label "Lisa" ;
+    schema:knows sixteena:gc,
+        sixteenc:ns,
+        sixteeng:ae,
+        sixteeng:js ;
     schema:location dbr:Gothenburg ;
     schema:name "Lisa" ;
     foaf:interest dbr:Musical_theatre .
 
-z:hk rdfs:label "Huda" ;
-    schema:knows z:ch,
-        z:ub ;
+seventeenz:hk rdfs:label "Huda" ;
+    schema:knows seventeenz:ch,
+        seventeenz:ub ;
     schema:location wikidata:Q217346 ;
     schema:name "Huda" ;
     foaf:interest dbr:Music .
 
-b:ml rdfs:label "Miklós" ;
-    schema:knows b:ag,
-        b:oj,
-        c:ns,
-        e:be,
-        e:ml ;
+sixteenb:ml rdfs:label "Miklós" ;
+    schema:knows sixteenb:ag,
+        sixteenb:oj,
+        sixteenc:ns,
+        sixteene:be,
+        sixteene:ml ;
     schema:location dbr:Budapest ;
     schema:name "Miklós" ;
     foaf:interest dbr:Houseboat .
 
-f:hs rdfs:label "Helena" ;
-    schema:knows e:da,
-        e:ev,
-        f:kp,
-        f:sh ;
+sixteenf:hs rdfs:label "Helena" ;
+    schema:knows sixteene:da,
+        sixteene:ev,
+        sixteenf:kp,
+        sixteenf:sh ;
     schema:location dbr:Stockholm ;
     schema:name "Helena" ;
     foaf:interest dbr:Gardening,
         dbr:Linked_data,
         dbr:Weather .
 
-g:js rdfs:label "João" ;
-    schema:knows a:ae,
-        f:kp,
-        g:ls ;
+sixteeng:js rdfs:label "João" ;
+    schema:knows sixteena:ae,
+        sixteenf:kp,
+        sixteeng:ls ;
     schema:location dbr:Helsinki,
         "Helsinki" ;
     schema:name "João" ;
@@ -563,33 +493,33 @@ g:js rdfs:label "João" ;
         <http://dbpedia.org/resource/Docker_(software)>,
         <https://www.wikidata.org/wiki/Q54837> .
 
-e:bb rdfs:label "Barbara" ;
-    schema:knows a:gc,
-        b:ag,
-        e:da,
-        e:ev,
-        e:lh,
-        e:ml ;
+sixteene:bb rdfs:label "Barbara" ;
+    schema:knows sixteena:gc,
+        sixteenb:ag,
+        sixteene:da,
+        sixteene:ev,
+        sixteene:lh,
+        sixteene:ml ;
     schema:location "Goettingen" ;
     schema:name "Barbara" ;
     foaf:interest <https://www.wikidata.org/wiki/Q33748> .
 
-e:ev rdfs:label "Eva" ;
-    schema:knows e:bb,
-        e:da,
-        e:lh,
-        e:ml,
-        f:sh ;
+sixteene:ev rdfs:label "Eva" ;
+    schema:knows sixteene:bb,
+        sixteene:da,
+        sixteene:lh,
+        sixteene:ml,
+        sixteenf:sh ;
     schema:location "Frankfurt",
         "https://en.wikipedia.org/wiki/Frankfurt" ;
     schema:name "Eva" ;
     foaf:interest <https://en.wikipedia.org/wiki/Cockatoo> .
 
-f:kp rdfs:label "Karin" ;
-    schema:knows c:va,
-        f:hs,
-        f:sh,
-        g:js ;
+sixteenf:kp rdfs:label "Karin" ;
+    schema:knows sixteenc:va,
+        sixteenf:hs,
+        sixteenf:sh,
+        sixteeng:js ;
     schema:location dbr:Stockholm ;
     schema:name "Karin" ;
     foaf:interest <http://dbpedia.org/resource/Americana_(music)>,
@@ -598,79 +528,79 @@ f:kp rdfs:label "Karin" ;
         dbr:Irish_literature,
         dbr:Short_story .
 
-f:sh rdfs:label "Steve" ;
-    schema:knows f:hs,
-        f:kp,
-        g:ae ;
+sixteenf:sh rdfs:label "Steve" ;
+    schema:knows sixteenf:hs,
+        sixteenf:kp,
+        sixteeng:ae ;
     schema:location dbr:Doha ;
     schema:name "Steve" ;
     foaf:interest dbr:Film,
         dbr:Folk_music .
 
-b:oj rdfs:label "Olaf" ;
-    schema:knows b:ag,
-        b:ml,
-        c:rr,
-        c:sp,
-        e:sp ;
+sixteenb:oj rdfs:label "Olaf" ;
+    schema:knows sixteenb:ag,
+        sixteenb:ml,
+        sixteenc:rr,
+        sixteenc:sp,
+        sixteene:sp ;
     schema:location dbr:The_Hague ;
     schema:name "Olaf" ;
     foaf:interest dbr:Swimming,
         wikidata:Q734576 .
 
-c:rr rdfs:label "Renee" ;
-    schema:knows b:oj,
-        c:ns,
-        c:sp,
-        c:va ;
+sixteenc:rr rdfs:label "Renee" ;
+    schema:knows sixteenb:oj,
+        sixteenc:ns,
+        sixteenc:sp,
+        sixteenc:va ;
     schema:location wikidata:Q36312,
         "Calgary" ;
     schema:name "Renee" ;
     foaf:interest dbr:Music .
 
-c:va rdfs:label "Volker" ;
-    schema:knows c:ns,
-        c:rr,
-        c:sp,
-        f:kp ;
+sixteenc:va rdfs:label "Volker" ;
+    schema:knows sixteenc:ns,
+        sixteenc:rr,
+        sixteenc:sp,
+        sixteenf:kp ;
     schema:location wikidata:Q2916,
         "Osnabrueck" ;
     schema:name "Volker" ;
     foaf:interest dbr:Linux,
         wikidata:Q388 .
 
-e:da rdfs:label "Dimitra" ;
-    schema:knows a:gc,
-        e:bb,
-        e:ev,
-        e:lh,
-        e:ml,
-        f:hs ;
+sixteene:da rdfs:label "Dimitra" ;
+    schema:knows sixteena:gc,
+        sixteene:bb,
+        sixteene:ev,
+        sixteene:lh,
+        sixteene:ml,
+        sixteenf:hs ;
     schema:location dbr:Rotterdam ;
     schema:name "Dimitra" ;
     foaf:interest dbr:Film,
         dbr:Linked_data,
         <https://www.wikidata.org/wiki/Q61509> .
 
-e:lh rdfs:label "Laura" ;
-    schema:knows a:gc,
-        c:va,
-        e:bb,
-        e:da,
-        e:ml ;
+sixteene:lh rdfs:label "Laura" ;
+    schema:knows sixteena:gc,
+        sixteenc:va,
+        sixteene:bb,
+        sixteene:da,
+        sixteene:ml ;
     schema:location <https://de.wikipedia.org/wiki/Bonn>,
         "Bonn" ;
     schema:name "Laura" ;
     foaf:interest dbr:film,
         dbr:music .
 
-e:ml rdfs:label "Eva",
+sixteene:ml rdfs:label "Eva",
         "Michael" ;
-    schema:knows a:fb,
-        e:bb,
-        e:da,
-        e:ev,
-        e:lh ;
+    schema:knows sixteena:fb,
+        sixteene:bb,
+        sixteene:da,
+        sixteene:ev,
+        sixteene:lh ;
     schema:location <http://www.w3.org/2003/01/geo/wgs84_pos#5327684>,
         "Frankfurt" ;
     schema:name "Eva",
@@ -678,45 +608,45 @@ e:ml rdfs:label "Eva",
     foaf:interest dbr:Chess,
         dbr:Music .
 
-z:ch rdfs:label "Christina" ;
-    schema:knows b:aj,
-        b:ml,
-        b:oj,
-        c:ns,
-        c:rr,
-        z-old:jh,
-        z:hk,
-        z:ub ;
+seventeenz:ch rdfs:label "Christina" ;
+    schema:knows sixteenb:aj,
+        sixteenb:ml,
+        sixteenb:oj,
+        sixteenc:ns,
+        sixteenc:rr,
+        sixteenz:jh,
+        seventeenz:hk,
+        seventeenz:ub ;
     schema:location dbr:San_Francisco ;
     schema:name "Christina" ;
     foaf:interest dbr:Music,
         wikidata:Q28865 .
 
-z:ub rdfs:label "Uldis" ;
-    schema:knows z:ch,
-        z:hk ;
+seventeenz:ub rdfs:label "Uldis" ;
+    schema:knows seventeenz:ch,
+        seventeenz:hk ;
     schema:location dbr:Riga ;
     schema:name "Uldis" ;
     foaf:interest dbr:Music,
         dbr:Semantic_Web .
 
-c:sp rdfs:label "Stanko" ;
-    schema:knows a:lr,
-        b:oj,
-        c:ns,
-        c:rr,
-        c:va,
-        e:lh ;
+sixteenc:sp rdfs:label "Stanko" ;
+    schema:knows sixteena:lr,
+        sixteenb:oj,
+        sixteenc:ns,
+        sixteenc:rr,
+        sixteenc:va,
+        sixteene:lh ;
     schema:location wikidata:Q1010,
         "Maribor" ;
     schema:name "Stanko" ;
     foaf:interest dbr:Music .
 
-c:ns rdfs:label "Natalie" ;
-    schema:knows b:ml,
-        c:rr,
-        c:sp,
-        c:va ;
+sixteenc:ns rdfs:label "Natalie" ;
+    schema:knows sixteenb:ml,
+        sixteenc:rr,
+        sixteenc:sp,
+        sixteenc:va ;
     schema:location "Kerpen" ;
     schema:name "Natalie" ;
     foaf:interest dbr:Music .

@@ -1,4 +1,4 @@
-@prefix z: <https://pad.riseup.net/p/swib-18-ws-facilitators#> .
+@prefix z: <https://pad.riseup.net/p/swib-18-ws-z#> .
 @prefix schema: <http://schema.org/> .
 
 z:XX1 schema:name "Group Member 1" .
